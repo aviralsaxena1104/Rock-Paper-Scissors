@@ -14,7 +14,7 @@ const genCompChoice=() => {
 
 const drawGame=()=>{
     console.log("game was draw");
-    msg.innerText="Game was draw.Play again"
+    msg.innerText=`Game was draw computer chose ${compChoice}.Play again`
     msg.style.backgroundColor="blue";
 }
 
@@ -22,13 +22,13 @@ const showWinner=(userWin, userChoice, compChoice)=>{
     if(userWin){
        userScore++;
        userScorePara.innerText=userScore;
-        msg.innerText="You win ";
+        msg.innerText=`You win computer chose ${compChoice} `;
         msg.style.backgroundColor="green";
     }
     else{
         compScore++;
         compScorePara.innerText=compScore;
-        msg.innerText="You lose ";
+        msg.innerText=`You lose computer chose ${compChoice}`;
         msg.style.backgroundColor="red";
     }
 }
